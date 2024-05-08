@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+apt-get update
+apt-get install -y nginx
+
+# Configure ngnx t listen on pot 80
+
+echo 'Hello World' > /var/www/html/index.html
+
+service nginx restart
